@@ -5,7 +5,7 @@ metadata:
   namespace: vprofile
   labels: {app: vprofile-app}
 spec:
-  replicas: 3                        # HPA manages this after the first apply
+  replicas: 1                        # HPA manages this after the first apply
   revisionHistoryLimit: 5
   strategy:
     type: RollingUpdate
